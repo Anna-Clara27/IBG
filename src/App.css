@@ -1,0 +1,63 @@
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #172b3a;
+  background: #f4f7f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+.pagina { max-width: 1180px; margin: 0 auto; padding: 0 42px; }
+.topo { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #dfe8e5; }
+.marca { display: flex; align-items: center; gap: 11px; font-weight: 750; letter-spacing: -.3px; }
+.marca-icone { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 10px; background: #087f65; color: white; font-size: 12px; letter-spacing: 1px; }
+.fonte { color: #71817f; font-size: 13px; }
+.apresentacao { padding: 66px 0 48px; border-bottom: 1px solid #dfe8e5; }
+.sobretitulo { color: #078267; font-size: 10px; font-weight: 800; letter-spacing: 1.7px; margin: 0 0 13px; }
+h1 { font-size: clamp(35px, 5vw, 55px); line-height: 1.08; letter-spacing: -2px; margin: 0; color: #173447; }
+h1 span { color: #078267; }
+.descricao { max-width: 650px; color: #647775; line-height: 1.7; font-size: 15px; margin: 17px 0 30px; }
+.resumo { display: flex; gap: 48px; }
+.resumo div { display: flex; flex-direction: column; gap: 3px; }
+.resumo strong { font-size: 22px; color: #173447; }
+.resumo span { font-size: 11px; color: #71817f; }
+.conteudo { padding: 39px 0 42px; border-bottom: 1px solid #dfe8e5; }
+.cabecalho-secao { display: flex; justify-content: space-between; align-items: end; margin-bottom: 20px; }
+h2 { font-size: 23px; letter-spacing: -.6px; margin: 0; color: #173447; }
+.contador { color: #71817f; font-size: 12px; padding-bottom: 3px; }
+.filtros { display: flex; gap: 10px; margin-bottom: 18px; }
+.campo-busca { display: flex; align-items: center; gap: 9px; flex: 1; height: 43px; padding: 0 13px; background: white; border: 1px solid #dce6e2; border-radius: 7px; color: #78908a; }
+.campo-busca span { font-size: 23px; line-height: 1; }
+.campo-busca input { border: 0; outline: 0; width: 100%; color: #173447; background: transparent; font-size: 13px; }
+select { min-width: 175px; padding: 0 12px; border: 1px solid #dce6e2; border-radius: 7px; background: white; color: #526662; font-size: 12px; outline-color: #078267; }
+.grade-estados { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; }
+.estado-card { min-height: 91px; padding: 13px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; background: #fff; border: 1px solid #e0e9e5; border-radius: 8px; cursor: pointer; transition: .15s; }
+.estado-card:hover { border-color: #078267; transform: translateY(-2px); }
+.estado-card.selecionado { background: #e8f5f0; border: 1px solid #078267; box-shadow: 0 0 0 1px #078267 inset; }
+.estado-sigla { color: #078267; font-weight: 800; font-size: 16px; }
+.estado-nome { color: #203b49; font-size: 12px; font-weight: 650; }
+.estado-regiao { color: #879792; font-size: 10px; }
+.mensagem, .erro { padding: 17px; border-radius: 7px; font-size: 13px; color: #647775; background: white; }
+.erro { color: #a33b37; background: #fff0ef; border: 1px solid #f3d0cd; }
+.municipios-secao { padding-bottom: 50px; }
+.sigla-destaque { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #e0f1eb; color: #078267; font-weight: 800; }
+.estado-vazio { min-height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: white; border: 1px dashed #d2dfd9; border-radius: 9px; color: #83928d; font-size: 13px; }
+.globo { color: #078267; font-size: 34px; margin-bottom: 5px; }
+.detalhes-estado { display: flex; gap: 0; margin: 0 0 19px; padding: 17px 20px; background: #e9f3ef; border-radius: 8px; }
+.detalhes-estado div { flex: 1; display: flex; flex-direction: column; gap: 5px; border-right: 1px solid #cfdfd8; padding-left: 17px; }
+.detalhes-estado div:first-child { padding-left: 0; }
+.detalhes-estado div:last-child { border: 0; }
+.detalhes-estado span { color: #70837b; font-size: 10px; text-transform: uppercase; letter-spacing: .8px; }
+.detalhes-estado strong { color: #1e4a40; font-size: 13px; }
+.lista-municipios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 14px; }
+.municipio { min-height: 43px; display: flex; align-items: center; gap: 11px; border-bottom: 1px solid #e4ebe8; font-size: 12px; color: #334d56; }
+.numero { color: #9aaba4; font-size: 10px; font-variant-numeric: tabular-nums; }
+.seta { margin-left: auto; color: #a2b2ac; }
+.rodape-lista { color: #81918a; font-size: 11px; margin-top: 15px; }
+footer { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #83918c; font-size: 10px; }
+footer span:first-child { color: #078267; font-weight: 800; letter-spacing: 1px; }
+footer a { color: #078267; text-decoration: none; }
+@media (max-width: 800px) { .pagina { padding: 0 22px; } .grade-estados { grid-template-columns: repeat(3, 1fr); } .lista-municipios { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .pagina { padding: 0 16px; } .apresentacao { padding: 45px 0 35px; } .resumo { gap: 18px; } .resumo strong { font-size: 18px; } .resumo span { font-size: 9px; } .grade-estados { grid-template-columns: repeat(2, 1fr); } .filtros { flex-direction: column; } select { min-height: 42px; } .lista-municipios { grid-template-columns: 1fr; } footer { align-items: flex-start; flex-direction: column; padding: 18px 0; } .detalhes-estado { padding: 13px 9px; } .detalhes-estado div { padding-left: 9px; } .detalhes-estado strong { font-size: 11px; } }
